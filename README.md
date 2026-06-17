@@ -37,6 +37,7 @@ TPI-Analisis-Datos/
 │   ├── students_clean.csv                    # Dataset limpio exportado
 │   └── paneles-grafana/                      # Capturas del dashboard de Grafana
 ├── dashboard.py                              # App Streamlit (Hito 4)
+├──   Students_Grading_Dataset_Biased.csv     # Dataset viejo sin limpiar
 ├── requirements.txt                          # Dependencias Python
 ├── Hito5_Informe_Gestion.docx                # Informe de gestión (Hito 5)
 └── README.md
