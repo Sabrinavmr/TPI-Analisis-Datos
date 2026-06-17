@@ -9,6 +9,10 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
+import logging
+
+# --Configuracion de logging
+logging.basicConfig(level=logging.ERROR)
 
 # ── Configuración de página ───────────────────────────────────────
 st.set_page_config(
@@ -47,6 +51,7 @@ def cargar_datos():
 
         return df, None
     except Exception as e:
+        logging.error(f"Error cargando datos: {e}")
         return None, str(e)
 
 # ══════════════════════════════════════════════════════════════════
@@ -61,6 +66,7 @@ def calcular_kpis(df):
         pct_reprobado = round(100 * (df['Grade'] == 'F').sum() / total, 1) if total > 0 else 0
         return total, promedio, pct_riesgo, pct_reprobado
     except Exception as e:
+        logging.error(f"Error en calcular_kpis: {e}")
         st.error(f"Error calculando KPIs: {e}")
         return 0, 0, 0, 0
 
@@ -131,6 +137,7 @@ def grafico_riesgo_pie(df):
         plt.tight_layout()
         return fig
     except Exception as e:
+        logging.error(f"Error en grafico_riesgo_pie: {e}")
         st.error(f"Error en gráfico de riesgo: {e}")
         return None
 
@@ -154,6 +161,7 @@ def grafico_grades_bar(df):
         plt.tight_layout()
         return fig
     except Exception as e:
+        logging.error(f"Error en grafico_grades_bar: {e}")
         st.error(f"Error en gráfico de grades: {e}")
         return None
 
@@ -178,6 +186,7 @@ def grafico_departamento(df):
         plt.tight_layout()
         return fig
     except Exception as e:
+        logging.error(f"Error en grafico_departamento: {e}")
         st.error(f"Error en gráfico de departamento: {e}")
         return None
 
@@ -206,6 +215,7 @@ def grafico_estres_reprobacion(df):
         plt.tight_layout()
         return fig
     except Exception as e:
+        logging.error(f"Error en grafico_estres_reprobacion: {e}")
         st.error(f"Error en gráfico de estrés: {e}")
         return None
 
@@ -246,6 +256,7 @@ def grafico_brecha_internet(df):
         plt.tight_layout()
         return fig
     except Exception as e:
+        logging.error(f"Error en grafico_brecha_internet: {e}")
         st.error(f"Error en gráfico de brecha: {e}")
         return None
 
@@ -280,6 +291,7 @@ def grafico_eficiencia(df):
         plt.tight_layout()
         return fig
     except Exception as e:
+        logging.error(f"Error en grafico_eficiencia: {e}")
         st.error(f"Error en gráfico de eficiencia: {e}")
         return None
 
@@ -347,6 +359,16 @@ def construir_sidebar(df):
             index=0
         )
 
+
+        st.sidebar.markdown("---")
+        rango_asistencia = st.sidebar.slider(
+            "📅 Asistencia mínima (%)",
+            min_value=0, max_value=100, value=0,
+            help="Filtrá estudiantes con al menos este % de asistencia"
+        )
+
+        
+
         st.sidebar.markdown("---")
         st.sidebar.markdown("📌 **Nota:** Los gráficos se actualizan automáticamente al cambiar los filtros.")
 
@@ -365,10 +387,15 @@ def construir_sidebar(df):
             df_filtrado = df_filtrado[df_filtrado['Internet_Access_at_Home'].isin(['Yes'])]
         elif internet == "Sin Internet":
             df_filtrado = df_filtrado[df_filtrado['Internet_Access_at_Home'].isin(['No'])]
+        
+        
+        if rango_asistencia > 0:
+            df_filtrado = df_filtrado[df_filtrado['Attendance (%)'] >= rango_asistencia]
 
         return df_filtrado
 
     except Exception as e:
+        logging.error(f"Error en construir_sidebar: {e}")
         st.sidebar.error(f"Error en filtros: {e}")
         return df
 
