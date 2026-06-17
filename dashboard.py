@@ -31,7 +31,7 @@ sns.set_theme(style='whitegrid', font_scale=1.0)
 def cargar_datos():
     """Carga el dataset limpio desde GitHub. Usa caché para no recargar en cada interacción."""
     try:
-        url = "https://raw.githubusercontent.com/Sabrinavmr/TPI-Analisis-Datos/refs/heads/main/students_clean.csv"
+        url = "https://raw.githubusercontent.com/Sabrinavmr/TPI-Analisis-Datos/main/parcial2-AdD/students_clean.csv"
         df = pd.read_csv(url)
         return df, None
     except Exception as e:
