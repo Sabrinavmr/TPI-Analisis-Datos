@@ -52,15 +52,15 @@ El notebook cubre los primeros dos hitos del TPI de forma integrada:
 
 | Paso | Descripción |
 |------|-------------|
-| **Paso 0** | Importación de librerías (pandas, numpy, matplotlib, seaborn) |
-| **Paso 1** | Carga del dataset desde GitHub (5.000 registros, 22 columnas) |
-| **Paso 2** | Auditoría inicial: tipos de datos, estadísticas descriptivas, detección de nulos |
-| **Paso 3** | Tratamiento de nulos: mediana para `Attendance (%)` y `Assignments_Avg`; categoría `Unknown` para `Parent_Education_Level` |
-| **Paso 4** | Normalización de strings en variables categóricas |
-| **Paso 5** | Detección de outliers con IQR — tabla diagnóstica con Q1, Q3, IQR, límites y CV% por variable |
-| **Paso 6** | Feature engineering: 5 variables nuevas (`Indice_Riesgo`, `Categoria_Riesgo`, `Delta_Parcial_Final`, `Promedio_Continuo`, `Eficiencia_Estudio`) |
-| **Paso 7** | Resumen final con control de calidad — 0 nulos restantes |
-| **Paso 8** | Exportación del dataset limpio a `students_clean.csv` |
+| **Paso  0** | Importación de librerías (pandas, numpy, matplotlib, seaborn) |
+| **Paso  1** | Carga del dataset desde GitHub (5.000 registros, 22 columnas) |
+| **Paso  2** | Auditoría inicial: tipos de datos, estadísticas descriptivas, detección de nulos |
+| **Paso  3** | Tratamiento de nulos: mediana para `Attendance (%)` y `Assignments_Avg`; categoría `Unknown` para `Parent_Education_Level` |
+| **Paso  4** | Normalización de strings en variables categóricas |
+| **Paso  5** | Detección de outliers con IQR — tabla diagnóstica con Q1, Q3, IQR, límites y CV% por variable |
+| **Paso  6** | Feature engineering: 5 variables nuevas (`Indice_Riesgo`, `Categoria_Riesgo`, `Delta_Parcial_Final`, `Promedio_Continuo`, `Eficiencia_Estudio`) |
+| **Paso  7** | Resumen final con control de calidad — 0 nulos restantes |
+| **Paso  8** | Exportación del dataset limpio a `students_clean.csv` |
 
 ### ▶️ Cómo ejecutar
 
@@ -72,7 +72,7 @@ El notebook cubre los primeros dos hitos del TPI de forma integrada:
 
 ## 📊 Hito 3 — Visualización Dinámica
 
-**Archivo:** [`parcial2-AdD/TPI_Intro_Analisis_de_Datos.ipynb`](./parcial2-AdD/TPI_Intro_Analisis_de_Datos.ipynb) (celdas del Hito 3 — Pasos 9 y 10)
+**Archivo:** [`parcial2-AdD/TPI_Intro_Analisis_de_Datos.ipynb`](parcial2-AdD/TPI_Intro_Analisis_de_Datos_modificado.ipynb) (celdas del Hito 3 — Pasos 9 y 10)
 
 Análisis visual profesional con Matplotlib y Seaborn respondiendo las tres preguntas de negocio. Todos los gráficos incluyen conclusiones interpretativas embebidas.
 
@@ -141,7 +141,7 @@ streamlit run dashboard.py
 
 ## 📊 Tablero de Control en Grafana
 
-**Capturas:** [`parcial2-AdD/paneles-grafana/`](./parcial2-AdD/paneles-grafana/)
+**Capturas:** [`parcial2-AdD/paneles-grafana/`](parcial2-AdD/paneles-grafanna)
 
 Dashboard complementario construido en Grafana v13 conectado a Supabase (PostgreSQL). El JSON del dashboard se encuentra en el repositorio para reproducibilidad.
 
