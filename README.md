@@ -165,7 +165,7 @@ Dashboard complementario construido en Grafana v13 conectado a Supabase (Postgre
 
 ## 📝 Hito 5 — Informe de Gestión y Propuesta
 
-**Archivo:** [`Hito5_Informe_Gestion.docx`](./Hito5_Informe_Gestion_Final.pdf)
+**Archivo:** [`Hito5_Informe_Gestion.pdf`](./Hito5_Informe_Gestion_Final.pdf)
 
 Informe académico que sintetiza los hallazgos del análisis y propone dos mejoras concretas fundamentadas en los datos.
 
