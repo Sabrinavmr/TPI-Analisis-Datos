@@ -165,21 +165,11 @@ Dashboard complementario construido en Grafana v13 conectado a Supabase (Postgre
 
 ## 📝 Hito 5 — Informe de Gestión y Propuesta
 
-**Archivo:** [`Hito5_Informe_Gestion.pdf`](./Hito5_Informe_Gestion_Final.pdf)
+**Archivo:** [`Hito5_Informe_Gestion_Final.pdf`](./Hito5_Informe_Gestion_Final.pdf)
 
-Informe académico que sintetiza los hallazgos del análisis y propone dos mejoras concretas fundamentadas en los datos.
+Informe académico que resume los principales hallazgos del análisis de datos sobre rendimiento estudiantil. Identifica factores asociados al riesgo de reprobación, como baja asistencia, bajo desempeño en parciales, altos niveles de estrés y menor cantidad de horas de estudio.
 
-**Diagnóstico principal:**
-- El 34,7% de los estudiantes reprobó o tuvo rendimiento bajo (Grades D y F)
-- Predictores más fuertes: asistencia < 65%, parcial < 50 pts y estrés ≥ 7
-- Segmento más vulnerable: Low sin internet (194 estudiantes, 3,9% del total, promedio 75,85 pts)
-- Brecha de estudio: Riesgo Bajo estudia 21 h/sem vs. 10,2 h de Riesgo Alto
-
-**Propuesta 1 — Sistema de Seguimiento Académico Temprano:**
-Sistema semanal de cálculo del Índice de Riesgo con alertas para el equipo docente, adaptando el dashboard de Streamlit como panel de monitoreo institucional. Impacto estimado: 253 estudiantes adicionales aprobando por cohorte.
-
-**Propuesta 2 — Programa de Reducción de la Brecha Digital:**
-Programa de inclusión digital para los 194 estudiantes de bajos ingresos sin acceso a internet, con tres componentes: convenios de conectividad subsidiada, ampliación del horario de laboratorios y préstamo de dispositivos. Sinergia con Propuesta 1: prioriza dispositivos según el Índice de Riesgo.
+A partir del diagnóstico, se proponen dos mejoras concretas: un Sistema de Seguimiento Académico Temprano basado en un Índice de Riesgo, y un Programa de Reducción de la Brecha Digital orientado a estudiantes con menor acceso a recursos tecnológicos.
 
 ---
 
