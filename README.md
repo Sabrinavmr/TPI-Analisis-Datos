@@ -26,15 +26,7 @@
 **Variables originales:** 22 — **Variables finales (con feature engineering):** 28
 **Archivo limpio:** [`parcial2-AdD/students_clean.csv`](./parcial2-AdD/students_clean.csv)
 
----
 
-## 🎯 Preguntas de Negocio
-
-1. ¿Qué combinación de variables conductuales y académicas permite identificar estudiantes con alta probabilidad de reprobar?
-2. ¿Existe una relación no lineal entre horas de estudio y rendimiento? ¿En qué punto el incremento de horas deja de producir mejoras significativas?
-3. ¿En qué medida el nivel de ingresos y el acceso a internet condicionan el desempeño académico?
-
----
 
 ## 🗂️ Estructura del Repositorio
 
@@ -54,7 +46,7 @@ TPI-Analisis-Datos/
 
 ## 📌 Hito 1 y 2 — Limpieza y Preparación de Datos
 
-**Archivo:** [`parcial2-AdD/TPI_Intro_Analisis_de_Datos.ipynb`](./parcial2-AdD/TPI_Intro_Analisis_de_Datos.ipynb)
+**Archivo:** [`parcial2-AdD/TPI_Intro_Analisis_de_Datos.ipynb`](parcial2-AdD/TPI_Intro_Analisis_de_Datos_modificado.ipynb)
 
 El notebook cubre los primeros dos hitos del TPI de forma integrada:
 
