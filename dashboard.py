@@ -249,8 +249,11 @@ def grafico_brecha_internet(df):
         ax.set_title('Score por Ingresos y Acceso a Internet', fontweight='bold')
         ax.set_xlabel('Nivel de Ingresos')
         ax.set_ylabel('Total Score Promedio')
+       
+        etiquetas = {'Low': 'Bajos (Low)', 'Medium': 'Medios (Medium)', 'High': 'Altos (High)'}
         ax.set_xticks(x)
-        ax.set_xticklabels(['Bajos (Low)', 'Medios (Medium)', 'Altos (High)'])
+        ax.set_xticklabels([etiquetas.get(c, c) for c in orden])
+
         ax.legend()
         ax.set_ylim(0, df['Total_Score'].max() * 1.15)
         plt.tight_layout()
