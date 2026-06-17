@@ -1,6 +1,4 @@
 # 📊 TPI — Introducción al Análisis de Datos
-
-**Tecnicatura Universitaria en Programación — UTN**
 **Materia:** Introducción al Análisis de Datos
 **Año:** 2026
 
@@ -37,9 +35,9 @@ TPI-Analisis-Datos/
 │   ├── students_clean.csv                    # Dataset limpio exportado
 │   └── paneles-grafana/                      # Capturas del dashboard de Grafana
 ├── dashboard.py                              # App Streamlit (Hito 4)
-├──   Students_Grading_Dataset_Biased.csv     # Dataset viejo sin limpiar
+├── Students_Grading_Dataset_Biased.csv     # Dataset viejo sin limpiar
 ├── requirements.txt                          # Dependencias Python
-├── Hito5_Informe_Gestion.docx                # Informe de gestión (Hito 5)
+├── Hito5_Informe_Gestion_Final.pdf           # Informe de gestión (Hito 5)
 └── README.md
 ```
 
@@ -167,7 +165,7 @@ Dashboard complementario construido en Grafana v13 conectado a Supabase (Postgre
 
 ## 📝 Hito 5 — Informe de Gestión y Propuesta
 
-**Archivo:** [`Hito5_Informe_Gestion.docx`](./Hito5_Informe_Gestion.docx)
+**Archivo:** [`Hito5_Informe_Gestion.docx`](./Hito5_Informe_Gestion_Final.pdf)
 
 Informe académico que sintetiza los hallazgos del análisis y propone dos mejoras concretas fundamentadas en los datos.
 
@@ -195,5 +193,3 @@ El dataset limpio está alojado en **Supabase (PostgreSQL)**, usado como fuente 
 - **Region:** South America (São Paulo)
 
 ---
-
-*TPI — Introducción al Análisis de Datos · UTN Tecnicatura en Programación · Junio 2026*
